@@ -8,19 +8,19 @@ pipeline{
         }
         stage("build"){
             steps {
-                sh 'sudo apt install npm'
+                sh 'apt install npm'
                 sh 'npm run build'
             }
         }
         stage("install"){
             steps {
-                sh 'sudo apt install npm'
+                sh 'apt install npm'
 
             }
         }
         stage("test"){
             steps {
-                sh 'sudo apt install npm'
+                sh 'apt install npm'
                 sh 'npm run test'
             }
         }
